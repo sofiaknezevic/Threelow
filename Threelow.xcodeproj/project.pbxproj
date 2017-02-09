@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5DA6EF131E4BE76F00F1CC34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6EF121E4BE76F00F1CC34 /* main.m */; };
 		5DA6EF1B1E4BE7F100F1CC34 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6EF1A1E4BE7F100F1CC34 /* Dice.m */; };
+		5DA6EF211E4BED9F00F1CC34 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6EF201E4BED9F00F1CC34 /* GameController.m */; };
+		5DA6EF241E4BF61700F1CC34 /* UserInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6EF231E4BF61700F1CC34 /* UserInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		5DA6EF121E4BE76F00F1CC34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DA6EF191E4BE7F100F1CC34 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
 		5DA6EF1A1E4BE7F100F1CC34 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		5DA6EF1F1E4BED9F00F1CC34 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		5DA6EF201E4BED9F00F1CC34 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		5DA6EF221E4BF61700F1CC34 /* UserInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInput.h; sourceTree = "<group>"; };
+		5DA6EF231E4BF61700F1CC34 /* UserInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInput.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				5DA6EF121E4BE76F00F1CC34 /* main.m */,
+				5DA6EF221E4BF61700F1CC34 /* UserInput.h */,
+				5DA6EF231E4BF61700F1CC34 /* UserInput.m */,
+				5DA6EF1F1E4BED9F00F1CC34 /* GameController.h */,
+				5DA6EF201E4BED9F00F1CC34 /* GameController.m */,
 				5DA6EF191E4BE7F100F1CC34 /* Dice.h */,
 				5DA6EF1A1E4BE7F100F1CC34 /* Dice.m */,
 			);
@@ -124,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA6EF211E4BED9F00F1CC34 /* GameController.m in Sources */,
+				5DA6EF241E4BF61700F1CC34 /* UserInput.m in Sources */,
 				5DA6EF1B1E4BE7F100F1CC34 /* Dice.m in Sources */,
 				5DA6EF131E4BE76F00F1CC34 /* main.m in Sources */,
 			);

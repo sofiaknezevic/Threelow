@@ -10,6 +10,13 @@
 
 @implementation Dice
 
+- (instancetype) init
+{
+        
+        
+}
+
+
 - (int) randomize
 {
     _currentValue = arc4random_uniform(6)+1;

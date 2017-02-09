@@ -1,5 +1,5 @@
 //
-//  Dice.h
+//  UserInput.h
 //  Threelow
 //
 //  Created by Sofia Knezevic on 2017-02-08.
@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dice : NSObject
+@interface UserInput : NSObject
 
-@property (nonatomic) int currentValue;
+- (void) menu;
 
-- (int) randomize;
 
-- (instancetype) init;
++ (NSString *)input;
 
 @end

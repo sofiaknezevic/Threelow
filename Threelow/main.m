@@ -8,26 +8,31 @@
 
 #import <Foundation/Foundation.h>
 #import "Dice.h"
+#import "GameController.h"
+#import "UserInput.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        initial testing
-//        Dice *dice1 = [[Dice alloc] init];
-//        NSLog(@"%d", [dice1 randomize]);
-//        
-//        Dice *dice2 = [[Dice alloc] init];
-//        NSLog(@"%d", [dice2 randomize]);
-//        
-//        Dice *dice3 = [[Dice alloc] init];
-//        NSLog(@"%d", [dice3 randomize]);
-//        
-//        Dice *dice4 = [[Dice alloc] init];
-//        NSLog(@"%d", [dice4 randomize]);
-//        
-//        Dice *dice5 = [[Dice alloc] init];
-//        NSLog(@"%d", [dice5 randomize]);
+       
+        //GameController *newGame = [[GameController alloc] initArrayAndSet];
         
-        printf("Would you like to play with these dice?");
+        //inifinite :( 
+        
+        while([[UserInput input] isEqualToString:@"roll"]){
+            
+         
+            
+            
+//            
+//            Dice *dice = [[Dice alloc] init];
+//            NSLog(@"%d", [dice randomize]);
+            
+            
+            
+            
+
+        }
+        
     }
     return 0;
 }
