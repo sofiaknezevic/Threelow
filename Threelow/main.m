@@ -14,14 +14,13 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        for(int i = 0; i<5; i++){
-            Dice *dice = [[Dice alloc] init];
-            NSLog(@"%d", [dice randomize]);
-        }
+      
         
         BOOL gameOn = TRUE;
         
+        //Dice *gameDice = [[Dice alloc] init];
         
+        GameController *rollDice = [[GameController alloc] init];
         
         while (gameOn) {
             
@@ -32,8 +31,10 @@ int main(int argc, const char * argv[]) {
                 gameOn = false;
                 
                 break;
+                
             }else if ([willYouPlay isEqualToString:@"roll"]){
                 
+                [rollDice roll];
                 
             }
         }

@@ -11,7 +11,11 @@
 #import "UserInput.h"
 
 @interface GameController : NSObject
+@property (nonatomic) NSMutableArray *diceNumberArray;
+@property (nonatomic) NSSet *diceSymbolSet;
 
-- (void)roll;
+- (instancetype) init;
+
+- (void) roll;
 
 @end

@@ -9,9 +9,28 @@
 #import "GameController.h"
 
 @implementation GameController
-
-- (void)roll
+- (instancetype)init
 {
+    self = [super init];
+    if (self) {
+        
+        _diceSymbolSet = [NSSet setWithObjects:@"⚀", "⚁", "⚂", "⚃", "⚄", "⚅", nil];
+        _diceNumberArray = [[NSMutableArray alloc] init];
+        
+        for(int i = 0; i<5; i++){
+            Dice *dice = [[Dice alloc] init];
+            [dice randomize];
+            [_diceNumberArray addObject:dice];
+        }
+    }
+    return self;
+}
+
+- (void)roll{
+    
+    if () {
+        <#statements#>
+    }
     
 }
 
