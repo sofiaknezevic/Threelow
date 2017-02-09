@@ -12,8 +12,10 @@
 
 - (instancetype) init
 {
-        
-        
+//    if (<#condition#>) {
+//        <#statements#>
+//    }
+    return self;
 }
 
 

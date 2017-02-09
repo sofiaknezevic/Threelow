@@ -10,8 +10,7 @@
 
 @interface UserInput : NSObject
 
-- (void) menu;
-
+- (NSString *) menu;
 
 + (NSString *)input;
 

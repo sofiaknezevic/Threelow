@@ -10,8 +10,11 @@
 
 @implementation UserInput
 
-- (void) menu
+- (NSString *) menu
 {
+    NSString *menu = [NSString stringWithFormat:@"\nWhat would you like to do?\n'roll' - Roll the dice!\n'hold' - Hold your a certain dice\n'unhold' - Release your current die\n'reset' - Reset all your held dice\n'quit' - Quit this LAME GAME"];
+    
+    return menu;
     
 }
 
@@ -22,11 +25,10 @@
     char charArray[255];
     fgets(charArray, 255, stdin);
     
-    NSString *userInput = [[NSString stringWithCString:charArray
+    return [[NSString stringWithCString:charArray
                                               encoding:NSUTF8StringEncoding]
                            stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    return userInput;
     
 }
 

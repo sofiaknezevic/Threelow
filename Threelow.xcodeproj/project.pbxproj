@@ -67,8 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				5DA6EF121E4BE76F00F1CC34 /* main.m */,
-				5DA6EF221E4BF61700F1CC34 /* UserInput.h */,
 				5DA6EF231E4BF61700F1CC34 /* UserInput.m */,
+				5DA6EF221E4BF61700F1CC34 /* UserInput.h */,
 				5DA6EF1F1E4BED9F00F1CC34 /* GameController.h */,
 				5DA6EF201E4BED9F00F1CC34 /* GameController.m */,
 				5DA6EF191E4BE7F100F1CC34 /* Dice.h */,
