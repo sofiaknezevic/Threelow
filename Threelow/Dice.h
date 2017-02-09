@@ -11,7 +11,7 @@
 @interface Dice : NSObject
 
 @property (nonatomic) int currentValue;
-@property (nonatomic, getter=setHeld) BOOL held;
+@property (nonatomic) BOOL held;
 
 - (int)randomize;
 
