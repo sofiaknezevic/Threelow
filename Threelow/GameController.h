@@ -12,14 +12,6 @@
 
 @interface GameController : NSObject
 
-@property (nonatomic) NSMutableArray *dataModel;
-@property (nonatomic) NSSet *controller;
-
-
-- (instancetype) initArrayAndSet;
-
-- (void)holdDie: (Dice *)dice;
-
 - (void)roll;
 
 @end

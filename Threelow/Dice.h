@@ -12,8 +12,6 @@
 
 @property (nonatomic) int currentValue;
 
-- (int) randomize;
-
-- (instancetype) init;
+- (int)randomize;
 
 @end

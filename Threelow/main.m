@@ -13,48 +13,34 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-       
-        //GameController *newGame = [[GameController alloc] initArrayAndSet];
 
+        for(int i = 0; i<5; i++){
+            Dice *dice = [[Dice alloc] init];
+            NSLog(@"%d", [dice randomize]);
+        }
+        
+        BOOL gameOn = TRUE;
         
         
-        BOOL gameOn = true;
         
-        while(true){
+        while (gameOn) {
             
-            UserInput *inputUser = [[UserInput alloc] init];
-            
-            NSLog(@"%@", [inputUser menu]);
-            
-            if([[UserInput input] isEqualToString:@"quit"]){
+            NSString *willYouPlay = [UserInput input];
+        
+            if([willYouPlay isEqualToString:@"quit"]){
                 
                 gameOn = false;
                 
                 break;
-            }
-            
-            if ([[UserInput input] isEqualToString:@"roll"]){
+            }else if ([willYouPlay isEqualToString:@"roll"]){
                 
-                
-            } else if ([[UserInput input] isEqualToString:@"hold"]){
-            
-            } else if([[UserInput input] isEqualToString:@"unhold"]){
-          
-            } else if([[UserInput input] isEqualToString:@"unhold"]){
                 
             }
-            
-            
-//            
-//            Dice *dice = [[Dice alloc] init];
-//            NSLog(@"%d", [dice randomize]);
-            
-            
-            
+        }
             
 
-        }
         
     }
+    
     return 0;
 }

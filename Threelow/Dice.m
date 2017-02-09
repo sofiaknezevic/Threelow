@@ -10,16 +10,7 @@
 
 @implementation Dice
 
-- (instancetype) init
-{
-//    if (<#condition#>) {
-//        <#statements#>
-//    }
-    return self;
-}
-
-
-- (int) randomize
+- (int)randomize
 {
     _currentValue = arc4random_uniform(6)+1;
     return _currentValue;
