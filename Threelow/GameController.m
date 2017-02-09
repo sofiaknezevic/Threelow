@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         
-        _diceSymbolSet = [NSSet setWithObjects:@"⚀", "⚁", "⚂", "⚃", "⚄", "⚅", nil];
+        _diceSymbolSet = [NSSet setWithObjects:@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅", nil];
         _diceNumberArray = [[NSMutableArray alloc] init];
         
         for(int i = 0; i<5; i++){
@@ -27,11 +27,17 @@
 }
 
 - (void)roll{
-    
-    if () {
-        <#statements#>
-    }
+
     
 }
 
+- (void)hold:(NSInteger)index
+{
+    
+}
+
+- (void)unHold:(NSInteger)index
+{
+    
+}
 @end

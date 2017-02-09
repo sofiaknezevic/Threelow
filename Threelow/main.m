@@ -22,7 +22,13 @@ int main(int argc, const char * argv[]) {
         
         GameController *rollDice = [[GameController alloc] init];
         
+        UserInput *menuGame = [[UserInput alloc] init];
+        
         while (gameOn) {
+            
+            NSLog(@"%@",[menuGame menu]);
+            
+            NSString *select;
             
             NSString *willYouPlay = [UserInput input];
         
@@ -36,6 +42,15 @@ int main(int argc, const char * argv[]) {
                 
                 [rollDice roll];
                 
+            }else if ([willYouPlay isEqualToString:@"hold"]){
+                NSLog(@"Enter the index of the die you would like to hold");
+                select = [UserInput input];
+                [rollDice hold:select.integerValue];
+                
+            }else if ([willYouPlay isEqualToString:@"release"]){
+                NSLog(@"Enter the index of the die you would like to release");
+                select = [UserInput input];
+                [rollDice unHold:select.integerValue];
             }
         }
             

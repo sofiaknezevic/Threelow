@@ -10,6 +10,13 @@
 
 @implementation UserInput
 
+- (NSString *) menu
+{
+    NSString *menu = [NSString stringWithFormat:@"\nWhat would you like to do next?\nroll - Roll the dice\nhold - Hold a certain die\nrelease - Release a die from its strangle-hold\nreset - Reset all held dice\nquit - QUIT THIS SUPER LAME GAME!"];
+    
+    return menu;
+}
+
 + (NSString *) input
 {
     char charArray[255];

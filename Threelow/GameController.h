@@ -18,4 +18,8 @@
 
 - (void) roll;
 
+- (void) hold:(NSInteger)index;
+- (void) unHold:(NSInteger)index;
+
+
 @end
