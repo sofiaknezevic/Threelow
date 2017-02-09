@@ -16,4 +16,10 @@
     return _currentValue;
 }
 
+- (BOOL)held {
+    return _held;
+}
+- (void)setHeld:(BOOL)held{
+    _held = held;
+}
 @end

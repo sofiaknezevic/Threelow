@@ -21,5 +21,7 @@
 - (void) hold:(NSInteger)index;
 - (void) unHold:(NSInteger)index;
 
+- (void) displayDiceValues;
+
 
 @end

@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
             
             NSLog(@"%@",[menuGame menu]);
             
-            NSString *select;
+            NSString *selection;
             
             NSString *willYouPlay = [UserInput input];
         
@@ -43,14 +43,21 @@ int main(int argc, const char * argv[]) {
                 [rollDice roll];
                 
             }else if ([willYouPlay isEqualToString:@"hold"]){
-                NSLog(@"Enter the index of the die you would like to hold");
-                select = [UserInput input];
-                [rollDice hold:select.integerValue];
+                
+                NSLog(@"\nEnter the index of the die you would like to hold");
+                selection = [UserInput input];
+                [rollDice hold:selection.integerValue];
+                
                 
             }else if ([willYouPlay isEqualToString:@"release"]){
-                NSLog(@"Enter the index of the die you would like to release");
-                select = [UserInput input];
-                [rollDice unHold:select.integerValue];
+                
+                NSLog(@"\nEnter the index of the die you would like to release");
+                selection = [UserInput input];
+                [rollDice unHold:selection.integerValue];
+                
+            }else{
+                
+                NSLog(@"I'm afraid you have entered a false command! Pay ATTENTION!");
             }
         }
             
