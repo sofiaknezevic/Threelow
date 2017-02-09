@@ -13,12 +13,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-      
         
         BOOL gameOn = TRUE;
-        
-        //Dice *gameDice = [[Dice alloc] init];
         
         GameController *rollDice = [[GameController alloc] init];
         
@@ -55,9 +51,14 @@ int main(int argc, const char * argv[]) {
                 selection = [UserInput input];
                 [rollDice unHold:selection.integerValue];
                 
+            }else if([willYouPlay isEqualToString:@"reset"]){
+                
+                [rollDice reset];
+                
             }else{
                 
                 NSLog(@"I'm afraid you have entered a false command! Pay ATTENTION!");
+                
             }
         }
             

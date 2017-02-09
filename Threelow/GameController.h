@@ -20,8 +20,11 @@
 
 - (void) hold:(NSInteger)index;
 - (void) unHold:(NSInteger)index;
+- (void) reset;
 
-- (void) displayDiceValues;
+- (void) score;
+
+- (void) displayDice;
 
 
 @end

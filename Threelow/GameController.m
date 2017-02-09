@@ -26,12 +26,15 @@
     return self;
 }
 
-- (void)roll{
+- (void)roll
+{
     for (Dice *dice in self.diceNumberArray) {
         if (dice.held == NO) {
             [dice randomize];
         }
     }
+    
+    [self displayDice];
     
 }
 
@@ -49,7 +52,26 @@
     
 }
 
-- (void) displayDiceValues
+- (void)reset
+{
+    for(Dice *dice in self.diceNumberArray){
+        [dice setHeld:NO];
+    }
+}
+
+- (void)score
+{
+    int score = 0;
+    for (Dice *dice in self.diceNumberArray) {
+        if (dice.currentValue != 3) {
+            score += dice.currentValue;
+        }
+    }
+    
+    NSLog(@"Score: %i", score);
+}
+
+- (void)displayDice
 {
     
 }
