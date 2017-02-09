@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         
-        _diceSymbolSet = [NSSet setWithObjects:@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅", nil];
+        _diceSymbolArray = [NSArray arrayWithObjects:@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅", nil];
         _diceNumberArray = [[NSMutableArray alloc] init];
         
         for(int i = 0; i<5; i++){
@@ -40,14 +40,14 @@
 
 - (void)hold:(NSInteger)index
 {
-    [[self.diceNumberArray objectAtIndex:(index-1)] setHeld:NO];
+    [[self.diceNumberArray objectAtIndex:(index-1)] setHeld:YES];
     NSLog(@"Dice number %ld is held for you :)", index);
     
 }
 
 - (void)unHold:(NSInteger)index
 {
-    [[self.diceNumberArray objectAtIndex:(index-1)] setHeld:YES];
+    [[self.diceNumberArray objectAtIndex:(index-1)] setHeld:NO];
     NSLog(@"Dice number %ld has been released from the ~KRaK!EN~ for you :)", index);
     
 }
@@ -62,6 +62,7 @@
 - (void)score
 {
     int score = 0;
+    
     for (Dice *dice in self.diceNumberArray) {
         if (dice.currentValue != 3) {
             score += dice.currentValue;
@@ -73,6 +74,20 @@
 
 - (void)displayDice
 {
+    int count = 1;
     
+    for (Dice *dice in self.diceNumberArray) {
+        
+        int grabValue = dice.currentValue;
+        
+        if (dice.held == YES) {
+            NSLog(@"Die: %i is [%@]", count, [self.diceSymbolArray objectAtIndex:(grabValue-1)]);
+        } else if (dice.held == NO){
+            NSLog(@"Die: %i is %@", count, [self.diceSymbolArray objectAtIndex:(grabValue-1)]);
+        }
+        
+        count++;
+    }
+   
 }
 @end

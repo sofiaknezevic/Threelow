@@ -60,6 +60,8 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"I'm afraid you have entered a false command! Pay ATTENTION!");
                 
             }
+            
+            [rollDice score];
         }
             
 

@@ -12,7 +12,7 @@
 
 @interface GameController : NSObject
 @property (nonatomic) NSMutableArray *diceNumberArray;
-@property (nonatomic) NSSet *diceSymbolSet;
+@property (nonatomic) NSArray *diceSymbolArray;
 
 - (instancetype) init;
 
